@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mt</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <button id="book" style="background-image: url(https://64.media.tumblr.com/57c28db6330fafcb65de86917622ac8b/tumblr_mwy23dPbgM1rpm29co1_500.gifv);  background: none; border-style: none; display: none;"> 
+        <img src="https://media.tenor.com/1aTxYPqs6zsAAAAj/minecraft-enchanted-book.gif">
+      
+
+
+
+    </button>
+
+
+
+
+
+
+    <div id="center">
+
+
+        <header style="cursor: grab; display: flex; justify-content: left;">
+            <button id="close" style="width: 30px; height: 25px; background-image: url(https://p7.hiclipart.com/preview/267/735/728/button-computer-icons-window-scalable-vector-graphics-clip-art-browse-and-download-close-button-png-pictures.jpg); background-size: contain; margin-left: 7px;">
+
+
+
+            </button>
+
+
+
+        </header>
+
+        <div id="content">
+
+
+       
+    
+        <div id="pic"> 
+            <img src="images/miau.jpeg"/>  
+        </div>
+        <p>Heyyy, im Marina, a 17 yearold tech enthusiast from Colombia :3 </p>
+
+
+
+   
+         </div>
+    
+
+
+   
+    </div>
+
+ <script>
+
+const box = document.getElementById("center");
+const headd = document.querySelector("#center header");
+
+let isDragging = false;
+let offsetX = 0;
+let offsetY = 0;
+
+headd.addEventListener("mousedown", (e) => {
+  e.preventDefault(); // prevent text selection
+
+  isDragging = true;
+  headd.style.cursor = "grabbing";
+
+  const rect = box.getBoundingClientRect();
+  offsetX = e.clientX - rect.left;
+  offsetY = e.clientY - rect.top;
+});
+
+document.addEventListener("mousemove", (e) => {
+  if (!isDragging) return;
+
+  box.style.left = `${e.clientX - offsetX}px`;
+  box.style.top = `${e.clientY - offsetY}px`;
+});
+
+document.addEventListener("mouseup", () => {
+  if (!isDragging) return;
+
+  isDragging = false;
+  headd.style.cursor = "grab";
+});
+
+document.getElementById("close").onclick = function() {
+    document.getElementById("center").style.display = "none";
+        document.getElementById("book").style.display = "block";
+
+}
+
+document.getElementById("book").onclick = function() {
+    document.getElementById("center").style.display = "block";
+    document.getElementById("book").style.display = "none";
+
+
+
+}
+    </script>
+    
+
+
+
+
+
+    
+</body>
+</html>

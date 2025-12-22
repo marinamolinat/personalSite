@@ -1,0 +1,117 @@
+#center {
+    background-color: rgb(23, 17, 17);
+    color: white;
+    text-align: center;
+ 
+    height: 70%;
+    width: 80%;
+   
+    border-radius: 20px;
+    border-image: url(https://i.pinimg.com/1200x/8f/49/72/8f4972455f39a0543fc817b480d59265.jpg) 30 40 30 40 round;
+    border-width: 10px;
+    border-style: dashed;
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+   box-shadow: 0 10px 25px rgba(41, 37, 255, 0.7);
+    
+}
+
+#book {
+     position: absolute;
+    top: 40%;
+    left: 40%;
+   display: none;
+   
+
+}
+
+#book:hover {
+    transform: scale(1.1);
+  
+   
+    
+  
+    box-shadow: 0 15px 30px rgba(41, 37, 255, 0.9);
+}
+
+#center header {
+    background-image: url(https://i.pinimg.com/736x/db/e6/6f/dbe66f1aa94d2ba4bea0757856716317.jpg);
+}
+
+body {
+    
+   
+    height: 100vh;
+    width: 100vw;
+      background-image: url(images/space.jpeg);
+    margin: 0px;
+    padding: 0px;
+
+    background-repeat: no-repeat;
+    
+}
+
+#pic {
+    margin: 20px;
+    width: 15%;
+    height: auto;
+    border-radius: 10px;
+    border-style: dashed;
+    border-image: url(https://i.pinimg.com/1200x/8f/49/72/8f4972455f39a0543fc817b480d59265.jpg) 30 40 30 40 round;
+    
+    border-width: 3px;
+
+   
+
+}
+
+#pic img {
+    max-width: 100%;
+    max-height: 100%;
+    
+    border-radius: 10px;
+}
+
+
+#pic:hover {
+
+  
+   
+  filter: hue-rotate(250deg);
+    
+  
+    
+}
+
+@keyframes myAnimation {
+  from {width: 100px;}
+  to {width: 50px;}
+}
+
+
+
+
+#circle {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 100%;
+    
+    animation-name: myAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+
+
+
+
+#stick {
+    width: 90%;
+    height: 10px;
+    background-color: tomato;
+
+}
