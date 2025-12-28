@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mt</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 
 </head>
 <body>
@@ -41,8 +42,9 @@
 
        
     
-        <div id="pic"> 
+        <div id="pic" > 
             <img src="images/miau.jpeg"/>  
+            <div class="popup">/\_/\ fefefefefefefefefef miau?</div>
         </div>
         <p>Heyyy, im Marina, a 17 yearold tech enthusiast from Colombia :3 </p>
 
@@ -56,55 +58,7 @@
    
     </div>
 
- <script>
-
-const box = document.getElementById("center");
-const headd = document.querySelector("#center header");
-
-let isDragging = false;
-let offsetX = 0;
-let offsetY = 0;
-
-headd.addEventListener("mousedown", (e) => {
-  e.preventDefault(); // prevent text selection
-
-  isDragging = true;
-  headd.style.cursor = "grabbing";
-
-  const rect = box.getBoundingClientRect();
-  offsetX = e.clientX - rect.left;
-  offsetY = e.clientY - rect.top;
-});
-
-document.addEventListener("mousemove", (e) => {
-  if (!isDragging) return;
-
-  box.style.left = `${e.clientX - offsetX}px`;
-  box.style.top = `${e.clientY - offsetY}px`;
-});
-
-document.addEventListener("mouseup", () => {
-  if (!isDragging) return;
-
-  isDragging = false;
-  headd.style.cursor = "grab";
-});
-
-document.getElementById("close").onclick = function() {
-    document.getElementById("center").style.display = "none";
-        document.getElementById("book").style.display = "block";
-
-}
-
-document.getElementById("book").onclick = function() {
-    document.getElementById("center").style.display = "block";
-    document.getElementById("book").style.display = "none";
-
-
-
-}
-    </script>
-    
+ 
 
 
 

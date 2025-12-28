@@ -7,7 +7,7 @@
     width: 80%;
    
     border-radius: 20px;
-    border-image: url(https://i.pinimg.com/1200x/8f/49/72/8f4972455f39a0543fc817b480d59265.jpg) 30 40 30 40 round;
+    border-image: url("images/blue.jpg") 30 40 30 40 round;
     border-width: 10px;
     border-style: dashed;
 
@@ -37,7 +37,7 @@
 }
 
 #center header {
-    background-image: url(https://i.pinimg.com/736x/db/e6/6f/dbe66f1aa94d2ba4bea0757856716317.jpg);
+    background-image: url("images/header.jpg");
 }
 
 body {
@@ -54,6 +54,7 @@ body {
 }
 
 #pic {
+    position: relative;
     margin: 20px;
     width: 15%;
     height: auto;
@@ -80,6 +81,7 @@ body {
   
    
   filter: hue-rotate(250deg);
+
     
   
     
@@ -114,4 +116,17 @@ animation-direction: alternate;
     height: 10px;
     background-color: tomato;
 
+}
+
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    background-color: rgba(236, 101, 12, 0.5);
+    border-style: solid;
+    padding: 10%;
+    display: none;
+    border-radius: 10%;
 }

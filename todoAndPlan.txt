@@ -1,0 +1,4 @@
+I want to animate the shadow
+add a place where people can see current spotify sound
+would be super cool if I make it connect to the fit bit api
+download images so they dont depend on the web
