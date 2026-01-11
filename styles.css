@@ -124,9 +124,22 @@ animation-direction: alternate;
     position: absolute;
     top: 20%;
     left: 90%;
-    background-color: rgba(236, 101, 12, 0.5);
+    color: white;
+    background-color: rgba(66, 18, 149, 0.5);
     border-style: solid;
-    padding: 10%;
-    display: none;
+    padding: 10px;
     border-radius: 10%;
+    white-space: nowrap;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+
+
+   
+
+
+
 }
