@@ -59,5 +59,18 @@ document.getElementById("book").onclick = function() {
     document.getElementById("book").style.display = "none";
 
 
-
 }
+
+
+//spotify
+fetch("http://localhost:5000/spotifyGet")
+  .then(res => res.json())
+  .then(song => {
+    document.getElementById("trackName").textContent = song.name;
+    document.getElementById("trackArtist").textContent = song.artist;
+    document.getElementById("trackArt").src = song.albumArt;
+    document.getElementById("trackArt").href = song.url; // optional: link to Spotify
+  })
+  .catch(err => console.error("Failed to fetch now playing:", err));
+
+

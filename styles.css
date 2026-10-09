@@ -6,10 +6,10 @@
     height: 70%;
     width: 80%;
    
-    border-radius: 20px;
-    border-image: url("images/blue.jpg") 30 40 30 40 round;
+    border-radius: 10px;
+   
     border-width: 10px;
-    border-style: dashed;
+  
 
     position: absolute;
     top: 10%;
@@ -50,6 +50,19 @@ body {
     padding: 0px;
 
     background-repeat: no-repeat;
+    
+}
+#top {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+#top div{
+    margin: 20px; 
+
+
     
 }
 
@@ -136,6 +149,9 @@ animation-direction: alternate;
     position: absolute;
     bottom: 0;
     margin: 10px;
+    display: flex; 
+ 
+    
 
 
    
